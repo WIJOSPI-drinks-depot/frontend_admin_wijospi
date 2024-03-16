@@ -161,8 +161,8 @@ License: You must have a valid license purchased only from themeforest(the above
 															<a class="navi-link" href="newDrink.html">
 																<span class="navi-icon"><i class="flaticon2-analytics text-danger"></i></span>
 																<div class="navi-text">
-																	<span class="d-block font-weight-bold">Boisson</span>
-																	<span class="text-muted">Ajouter, modifier, supprimer une bois...</span>
+																	<span class="d-block font-weight-bold">Casier de boissons</span>
+																	<span class="text-muted">Ajouter, modifier, supprimer un cas...</span>
 																</div>
 																<span class="label label-light-danger font-weight-bold label-inline">new</span>
 															</a>
@@ -256,7 +256,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<!--begin::Left-->
 							<div class="d-flex align-items-stretch mr-2">
 								<!--begin::Page Title-->
-								<h3 class="d-none text-dark d-lg-flex align-items-center mr-10 mb-0">Tableau de bord</h3>
+								<h3 class="d-none text-dark d-lg-flex align-items-center mr-10 mb-0">WIJOSPI</h3>
 								<!--end::Page Title-->
 							</div>
 							<!--end::Left-->
@@ -618,7 +618,79 @@ License: You must have a valid license purchased only from themeforest(the above
 					<!--end::Header-->
 					<!--begin::Content-->
 					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
-						
+						<form class="form font-size-h1 font-size-lg-h2">
+							<div class="card-body">
+								<div class="form-group row">
+									<div class="col-lg-6">
+										<label>Libellé:</label>
+										<input type="text" class="form-control" placeholder="Veuillez entrer le libellé"/>
+										<span class="form-text text-muted">Entrer le nom de la boisson</span>
+									</div>
+									<div class="col-lg-6">
+										<label>Capacité:</label>
+										<div class="input-group">
+											<input type="tel" class="form-control" placeholder="Veuillez entrer le contact"/>
+											<div class="input-group-append"><span class="input-group-text"><i class="fa fa-phone"></i></span></div>
+										</div>
+									<span class="form-text text-muted">Entrer le contact du dépôt</span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-lg-6">
+									<label>Email:</label>
+									<div class="input-group">
+										<input type="email" class="form-control" placeholder="Veuillez entrer l'adresse Email"/>
+										<div class="input-group-append"><span class="input-group-text"><i class="fa fa-at"></i></span></div>
+									</div>
+									<span class="form-text text-muted">Entrer l'email du dépôt</span>
+								</div>
+								<div class="col-lg-6">
+									<label>Mots de passe:</label>
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Veuillez entrer le mot de passe"/>
+										<div class="input-group-append"><span class="input-group-text"><i class="fa fa-key"></i></span></div>
+									</div>
+									<span class="form-text text-muted">Entrer le mot de passe</span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-lg-6">
+									<label>Adresse:</label>
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Veuillez entrer l'adresse"/>
+										<div class="input-group-append"><span class="input-group-text"><i class="fa fa-map"></i></span></div>
+									</div>
+									<span class="form-text text-muted">Entrer l'adresse du dépôt</span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-lg-6">
+									<label>Type de dépôt:</label>
+									<div class="radio-inline">
+										<label class="radio radio-solid">
+											<input type="radio" name="example_2" checked="checked" value="2"/>
+											<span></span>
+											Filière
+										</label>
+										<label class="radio radio-solid">
+											<input type="radio" name="example_2" value="2"/>
+											<span></span>
+											Général
+										</label>
+									</div>
+									<span class="form-text text-muted">Sélectionner le type du dépôt</span>
+									</div>
+								</div>
+							</div>
+							<div class="card-footer">
+								<div class="row">
+									<div class="col-lg-6">
+										<button type="submit" class="btn btn-outline-success mr-5"><i class="fa fa-check-double"></i>Enregistrer</button>
+										<button type="reset" class="btn btn-danger"><i class="fas fa-times"></i>Annuler</button>
+									</div>
+								</div>
+							</div>
+						</form>
 					</div>
 					<!--end::Content-->
 					<!--begin::Footer-->
