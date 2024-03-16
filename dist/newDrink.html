@@ -629,58 +629,50 @@ License: You must have a valid license purchased only from themeforest(the above
 									<div class="col-lg-6">
 										<label>Capacité:</label>
 										<div class="input-group">
-											<input type="tel" class="form-control" placeholder="Veuillez entrer le contact"/>
-											<div class="input-group-append"><span class="input-group-text"><i class="fa fa-phone"></i></span></div>
+											<input type="tel" class="form-control" placeholder="Veuillez entrer sa capacité (En cl)"/>
+											<div class="input-group-append"><span class="input-group-text"><i class="fas fa-glass-whiskey"></i></span></div>
 										</div>
-									<span class="form-text text-muted">Entrer le contact du dépôt</span>
+									<span class="form-text text-muted">Entrer la capacité de la boisson</span>
 								</div>
 							</div>
 							<div class="form-group row">
 								<div class="col-lg-6">
-									<label>Email:</label>
+									<label>Prix:</label>
 									<div class="input-group">
-										<input type="email" class="form-control" placeholder="Veuillez entrer l'adresse Email"/>
-										<div class="input-group-append"><span class="input-group-text"><i class="fa fa-at"></i></span></div>
+										<input type="email" class="form-control" placeholder="Veuillez entrer le prix"/>
+										<div class="input-group-append"><span class="input-group-text"><i class="fa fa-coins"></i></span></div>
 									</div>
-									<span class="form-text text-muted">Entrer l'email du dépôt</span>
+									<span class="form-text text-muted">Entrer le prix du casier</span>
 								</div>
 								<div class="col-lg-6">
-									<label>Mots de passe:</label>
+									<label>Durée de vie:</label>
 									<div class="input-group">
-										<input type="text" class="form-control" placeholder="Veuillez entrer le mot de passe"/>
-										<div class="input-group-append"><span class="input-group-text"><i class="fa fa-key"></i></span></div>
+										<input type="text" class="form-control" placeholder="Veuillez entrer la durée de vie (En mois)"/>
+										<div class="input-group-append"><span class="input-group-text"><i class="fa fa-calendar"></i></span></div>
 									</div>
-									<span class="form-text text-muted">Entrer le mot de passe</span>
+									<span class="form-text text-muted">Entrer la durée de vie de la boisson</span>
 								</div>
 							</div>
 							<div class="form-group row">
 								<div class="col-lg-6">
-									<label>Adresse:</label>
-									<div class="input-group">
-										<input type="text" class="form-control" placeholder="Veuillez entrer l'adresse"/>
-										<div class="input-group-append"><span class="input-group-text"><i class="fa fa-map"></i></span></div>
-									</div>
-									<span class="form-text text-muted">Entrer l'adresse du dépôt</span>
+									<label>Catégorie:</label>
+									<select class="form-control selectpicker" data-size="7" data-live-search="true">
+										<option value="" disabled>Sélectionner</option>
+										<option value="Alcoolisée">Alcoolisée</option>
+										<option value="Sucrerie" selected>Sucrerie</option>
+									</select>
+									<span class="form-text text-muted">Entrer la catégorie de la boisson</span>
+								</div>
+								<div class="col-lg-6">
+									<label>Conditionnement:</label>
+									<select class="form-control selectpicker" data-size="7" data-live-search="true">
+										<option value="" disabled>Sélectionner</option>
+										<option value="Alcoolisée">Verre</option>
+										<option value="Sucrerie" selected>Cannette</option>
+									</select>
+									<span class="form-text text-muted">Entrer le conditionnement de la boisson</span>
 								</div>
 							</div>
-							<div class="form-group row">
-								<div class="col-lg-6">
-									<label>Type de dépôt:</label>
-									<div class="radio-inline">
-										<label class="radio radio-solid">
-											<input type="radio" name="example_2" checked="checked" value="2"/>
-											<span></span>
-											Filière
-										</label>
-										<label class="radio radio-solid">
-											<input type="radio" name="example_2" value="2"/>
-											<span></span>
-											Général
-										</label>
-									</div>
-									<span class="form-text text-muted">Sélectionner le type du dépôt</span>
-									</div>
-								</div>
 							</div>
 							<div class="card-footer">
 								<div class="row">
