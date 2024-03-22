@@ -98,7 +98,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						<ul class="nav flex-column">
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Accueil">
-								<a href="#" class="nav-link btn btn-icon btn-clean btn-icon-white btn-lg active">
+								<a href="index.html" class="nav-link btn btn-icon btn-clean btn-icon-white btn-lg active">
 									<i class="flaticon2-protection icon-lg"></i>
 								</a>
 							</li>
@@ -146,7 +146,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														
 														<!--begin::Item-->
 														<div class="navi-item">
-															<a class="navi-link" href="newStoreHouse.html">
+															<a class="navi-link" href="Add_page/newStoreHouse.html">
 																<span class="navi-icon"><i class="flaticon2-analytics text-danger"></i></span>
 																<div class="navi-text">
 																	<span class="d-block font-weight-bold">Dépôt</span>
@@ -158,7 +158,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														<!--end::Item-->
 														<!--begin::Item-->
 														<div class="navi-item">
-															<a class="navi-link" href="newDrink.html">
+															<a class="navi-link" href="Add_page/newDrink.html">
 																<span class="navi-icon"><i class="flaticon2-analytics text-danger"></i></span>
 																<div class="navi-text">
 																	<span class="d-block font-weight-bold">Casier de boissons</span>
@@ -170,7 +170,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														<!--end::Item-->
 														<!--begin::Item-->
 														<div class="navi-item">
-															<a class="navi-link" href="newCategory.html">
+															<a class="navi-link" href="Add_page/newCategory.html">
 																<span class="navi-icon"><i class="flaticon2-analytics text-danger"></i></span>
 																<div class="navi-text">
 																	<span class="d-block font-weight-bold">Catégorie</span>
@@ -198,14 +198,100 @@ License: You must have a valid license purchased only from themeforest(the above
 							<!--end::Item-->							
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Listes">
-								<a href="#" class="nav-link btn btn-icon btn-icon-white btn-lg" data-toggle="tab" data-target="#kt_aside_tab_2" role="tab">
-									<i class="flaticon2-list-3 icon-lg"></i>
-								</a>
+								<div class="dropdown">
+
+									<div class="topbar-item mr-3" data-toggle="dropdown" data-offset="10px,0px">
+										<div class="nav-link btn btn-icon btn-dropdown btn-icon-white btn-lg" data-toggle="tab" data-target="#kt_aside_tab_3" role="tab">
+											<i class="flaticon2-list-3 icon-lg"></i>
+										</div>	
+									</div>
+									
+									
+
+									<!--begin::Dropdown-->
+									<div class="dropdown-menu p-0 m-0 dropdown-menu-right dropdown-menu-anim-up dropdown-menu-lg">
+										<form>
+											<!--begin::Header-->
+											<div class="d-flex flex-column pt-12 bgi-size-cover bgi-no-repeat rounded-top" style="background-image: url(assets/media/misc/test.jpg)">
+												<!--begin::Title-->
+												<h4 class="d-flex flex-center rounded-top">
+													<span class="text-white">LISTES</span>
+													<!-- <span class="btn btn-text btn-danger btn-sm font-weight-bold btn-font-md ml-2">3</span> -->
+												</h4>
+												<!--end::Title-->
+												<!--begin::Tabs-->
+												<ul class="nav nav-bold nav-tabs nav-tabs-line nav-tabs-line-3x nav-tabs-line-transparent-white nav-tabs-line-active-border-primary mt-3 px-8" role="tablist">
+													<li class="nav-item">
+														<a class="nav-link active show" data-toggle="tab" href="#topbar_add_events">Parties</a>
+													</li>
+
+												</ul>
+												<!--end::Tabs-->
+											</div>
+											<!--end::Header-->
+											<!--begin::Content-->
+											<div class="tab-content">
+
+												<!--begin::Tabpane-->
+												<div class="tab-pane active" id="topbar_add_event" role="tabpanel">
+													<!--begin::Nav-->
+													<div class="navi navi-hover scroll my-4" data-scroll="true" data-height="300" data-mobile-height="200">
+														
+														<!--begin::Item-->
+														<div class="navi-item">
+															<a class="navi-link" href="Add_page/newStoreHouse.html">
+																<span class="navi-icon"><i class="flaticon2-analytics text-danger"></i></span>
+																<div class="navi-text">
+																	<span class="d-block font-weight-bold">Liste des dépôts</span>
+																	<span class="text-muted">Consulter la liste des dépôts</span>
+																</div>
+																<span class="label label-light-danger font-weight-bold label-inline">new</span>
+															</a>
+														</div>
+														<!--end::Item-->
+														<!--begin::Item-->
+														<div class="navi-item">
+															<a class="navi-link" href="Add_page/newDrink.html">
+																<span class="navi-icon"><i class="flaticon2-analytics text-danger"></i></span>
+																<div class="navi-text">
+																	<span class="d-block font-weight-bold">Liste des boissons</span>
+																	<span class="text-muted">Consulter la liste des boissons</span>
+																</div>
+																<span class="label label-light-danger font-weight-bold label-inline">new</span>
+															</a>
+														</div>
+														<!--end::Item-->
+														<!--begin::Item-->
+														<div class="navi-item">
+															<a class="navi-link" href="Add_page/newCategory.html">
+																<span class="navi-icon"><i class="flaticon2-analytics text-danger"></i></span>
+																<div class="navi-text">
+																	<span class="d-block font-weight-bold">Liste des catégories</span>
+																	<span class="text-muted">Consulter la liste des catégories</span>
+																</div>
+																<span class="label label-light-danger font-weight-bold label-inline">new</span>
+															</a>
+														</div>
+														<!--end::Item-->
+
+													</div>
+													<!--end::Nav-->
+												</div>
+												<!--end::Tabpane-->
+
+											</div>
+											<!--end::Content-->
+										</form>
+									</div>
+									<!--end::Dropdown-->
+									
+	
+								</div>
 							</li>
 							<!--end::Item-->
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Approvisionnement">
-								<a href="#" class="nav-link btn btn-icon btn-icon-white btn-lg" data-toggle="tab" data-target="#kt_aside_tab_3" role="tab">
+								<a href="approvisionnement.html" class="nav-link btn btn-icon btn-icon-white btn-lg" data-toggle="tab" data-target="#kt_aside_tab_3" role="tab">
 									<i class="flaticon2-calendar-6 icon-lg"></i>
 								</a>
 							</li>
@@ -617,81 +703,68 @@ License: You must have a valid license purchased only from themeforest(the above
 					</div>
 					<!--end::Header-->
 					<!--begin::Content-->
-					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
-						<form class="form font-size-h1 font-size-lg-h2">
-							<div class="card-body">
-								<div class="form-group row">
-									<div class="col-lg-6">
-										<label>Désignation:</label>
-										<input type="text" class="form-control" placeholder="Veuillez entrer la désignation"/>
-										<span class="form-text text-muted">Entrer la désignation du dépôt</span>
-									</div>
-									<div class="col-lg-6">
-										<label>Contact:</label>
-										<div class="input-group">
-											<input type="tel" class="form-control" placeholder="Veuillez entrer le contact"/>
-											<div class="input-group-append"><span class="input-group-text"><i class="fa fa-phone"></i></span></div>
-										</div>
-									<span class="form-text text-muted">Entrer le contact du dépôt</span>
-								</div>
-							</div>
-							<div class="form-group row">
-								<div class="col-lg-6">
-									<label>Email:</label>
-									<div class="input-group">
-										<input type="email" class="form-control" placeholder="Veuillez entrer l'adresse Email"/>
-										<div class="input-group-append"><span class="input-group-text"><i class="fa fa-at"></i></span></div>
-									</div>
-									<span class="form-text text-muted">Entrer l'email du dépôt</span>
-								</div>
-								<div class="col-lg-6">
-									<label>Mots de passe:</label>
-									<div class="input-group">
-										<input type="text" class="form-control" placeholder="Veuillez entrer le mot de passe"/>
-										<div class="input-group-append"><span class="input-group-text"><i class="fa fa-key"></i></span></div>
-									</div>
-									<span class="form-text text-muted">Entrer le mot de passe</span>
-								</div>
-							</div>
-							<div class="form-group row">
-								<div class="col-lg-6">
-									<label>Adresse:</label>
-									<div class="input-group">
-										<input type="text" class="form-control" placeholder="Veuillez entrer l'adresse"/>
-										<div class="input-group-append"><span class="input-group-text"><i class="fa fa-map"></i></span></div>
-									</div>
-									<span class="form-text text-muted">Entrer l'adresse du dépôt</span>
-								</div>
-							</div>
-							<div class="form-group row">
-								<div class="col-lg-6">
-									<label>Type de dépôt:</label>
-									<div class="radio-inline">
-										<label class="radio radio-solid">
-											<input type="radio" name="example_2" checked="checked" value="2"/>
-											<span></span>
-											Filière
-										</label>
-										<label class="radio radio-solid">
-											<input type="radio" name="example_2" value="2"/>
-											<span></span>
-											Général
-										</label>
-									</div>
-									<span class="form-text text-muted">Sélectionner le type du dépôt</span>
-									</div>
-								</div>
-							</div>
-							<div class="card-footer">
-								<div class="row">
-									<div class="col-lg-6">
-										<button type="submit" class="btn btn-outline-success mr-5"><i class="fa fa-check-double"></i>Enregistrer</button>
-										<button type="reset" class="btn btn-danger"><i class="fas fa-times"></i>Annuler</button>
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
+					<div class="content d-flex w-100 flex-column justify-content-center align-items-center flex-column-fluid" id="kt_content">
+                        <div class="bg-white w-75">
+                            <form class="form w-100">
+
+                                <div class="card-footer bg-dark border-top-0">
+                                    <div class="row align-items-center">
+                                        <div class="col text-left text-white h3">
+                                            APPROVISIONNEMENT
+                                        </div>
+                                        <div class="col text-right">
+                                            <button type="submit" class="btn btn-success font-weight-bold mr-2">Valider l'approvisionnement</button>
+                                            <button type="reset" class="btn btn-light-danger font-weight-bold">Annuler</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label>Date</label>
+                                        <div class="w-100">
+                                            <div class="input-group date" id="kt_datetimepicker_2" data-target-input="nearest">
+                                                <input type="text" class="form-control datetimepicker-input" placeholder="Select date & time" data-target="#kt_datetimepicker_2"/>
+                                                <div class="input-group-append" data-target="#kt_datetimepicker_2" data-toggle="datetimepicker">
+                                                    <span class="input-group-text">
+                                                        <i class="ki ki-calendar"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Dépôt</label>
+                                        <select class="form-control selectpicker" data-size="7" data-live-search="true">
+                                            <option value="" disabled>Sélectionner</option>
+                                            <option value="ETS GLORY-WIJOSPI">BAR GLORY-WIJOSPI</option>
+                                            <option value="ETS Karl-WIJOSPI" selected>ETS Karl-WIJOSPI</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Boisson</label>
+                                        <select class="form-control selectpicker" data-size="7" data-live-search="true">
+                                            <option value="" disabled>Sélectionner</option>
+                                            <option value="ETS GLORY-WIJOSPI">PILS</option>
+                                            <option value="ETS Karl-WIJOSPI" selected>Cocktail de fruits</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Nombre de casiers</label>
+                                        <div class="input-group">
+                                            <input type="number" class="form-control" min="1" max="100" placeholder="Veuillez entrer le nombre de casiers à approvisionner"/>
+                                            <div class="input-group-append"><span class="input-group-text"><i class="far fa-window-minimize"></i></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+    
+                        </div>
+                    </div>
 					<!--end::Content-->
 					<!--begin::Footer-->
 					<div class="footer bg-white py-4 d-flex flex-lg-column" id="kt_footer">
@@ -2005,6 +2078,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			</div>
 			<!--end::Content-->
 		</div>
+
 		<!--end::Demo Panel-->
 		<script>var HOST_URL = "https://preview.keenthemes.com/metronic/theme/html/tools/preview";</script>
 		<!--begin::Global Config(global config for global JS scripts)-->
@@ -2014,6 +2088,12 @@ License: You must have a valid license purchased only from themeforest(the above
 		<script src="assets/plugins/global/plugins.bundle.js"></script>
 		<script src="assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
 		<script src="assets/js/scripts.bundle.js"></script>
+
+        <!-- Calendrier -->
+        <script src="assets/js/calendrier.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js" integrity="sha512-Dz4zO7p6MrF+VcOD6PUbA08hK1rv0hDv/wGuxSUjImaUYxRyK2gLC6eQWVqyDN9IM1X/kUA8zkykJS/gEVOd3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        
 		<!--end::Global Theme Bundle-->
 		<!--begin::Page Vendors(used by this page)-->
 		<script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
@@ -2022,6 +2102,8 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!--begin::Page Scripts(used by this page)-->
 		<script src="assets/js/pages/widgets.js"></script>
 		<!--end::Page Scripts-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.38.0/js/tempusdominus-bootstrap-4.min.js" crossorigin="anonymous"></script>
 	</body>
 	<!--end::Body-->
 </html>

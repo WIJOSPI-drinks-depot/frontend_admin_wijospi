@@ -98,7 +98,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						<ul class="nav flex-column">
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Accueil">
-								<a href="#" class="nav-link btn btn-icon btn-clean btn-icon-white btn-lg active">
+								<a href="index.html" class="nav-link btn btn-icon btn-clean btn-icon-white btn-lg active">
 									<i class="flaticon2-protection icon-lg"></i>
 								</a>
 							</li>
@@ -146,7 +146,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														
 														<!--begin::Item-->
 														<div class="navi-item">
-															<a class="navi-link" href="newStoreHouse.html">
+															<a class="navi-link" href="Add_page/newStoreHouse.html">
 																<span class="navi-icon"><i class="flaticon2-analytics text-danger"></i></span>
 																<div class="navi-text">
 																	<span class="d-block font-weight-bold">Dépôt</span>
@@ -158,7 +158,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														<!--end::Item-->
 														<!--begin::Item-->
 														<div class="navi-item">
-															<a class="navi-link" href="newDrink.html">
+															<a class="navi-link" href="Add_page/newDrink.html">
 																<span class="navi-icon"><i class="flaticon2-analytics text-danger"></i></span>
 																<div class="navi-text">
 																	<span class="d-block font-weight-bold">Casier de boissons</span>
@@ -170,7 +170,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														<!--end::Item-->
 														<!--begin::Item-->
 														<div class="navi-item">
-															<a class="navi-link" href="newCategory.html">
+															<a class="navi-link" href="Add_page/newCategory.html">
 																<span class="navi-icon"><i class="flaticon2-analytics text-danger"></i></span>
 																<div class="navi-text">
 																	<span class="d-block font-weight-bold">Catégorie</span>
@@ -198,14 +198,100 @@ License: You must have a valid license purchased only from themeforest(the above
 							<!--end::Item-->							
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Listes">
-								<a href="#" class="nav-link btn btn-icon btn-icon-white btn-lg" data-toggle="tab" data-target="#kt_aside_tab_2" role="tab">
-									<i class="flaticon2-list-3 icon-lg"></i>
-								</a>
+								<div class="dropdown">
+
+									<div class="topbar-item mr-3" data-toggle="dropdown" data-offset="10px,0px">
+										<div class="nav-link btn btn-icon btn-dropdown btn-icon-white btn-lg" data-toggle="tab" data-target="#kt_aside_tab_3" role="tab">
+											<i class="flaticon2-list-3 icon-lg"></i>
+										</div>	
+									</div>
+									
+									
+
+									<!--begin::Dropdown-->
+									<div class="dropdown-menu p-0 m-0 dropdown-menu-right dropdown-menu-anim-up dropdown-menu-lg">
+										<form>
+											<!--begin::Header-->
+											<div class="d-flex flex-column pt-12 bgi-size-cover bgi-no-repeat rounded-top" style="background-image: url(assets/media/misc/test.jpg)">
+												<!--begin::Title-->
+												<h4 class="d-flex flex-center rounded-top">
+													<span class="text-white">LISTES</span>
+													<!-- <span class="btn btn-text btn-danger btn-sm font-weight-bold btn-font-md ml-2">3</span> -->
+												</h4>
+												<!--end::Title-->
+												<!--begin::Tabs-->
+												<ul class="nav nav-bold nav-tabs nav-tabs-line nav-tabs-line-3x nav-tabs-line-transparent-white nav-tabs-line-active-border-primary mt-3 px-8" role="tablist">
+													<li class="nav-item">
+														<a class="nav-link active show" data-toggle="tab" href="#topbar_add_events">Parties</a>
+													</li>
+
+												</ul>
+												<!--end::Tabs-->
+											</div>
+											<!--end::Header-->
+											<!--begin::Content-->
+											<div class="tab-content">
+
+												<!--begin::Tabpane-->
+												<div class="tab-pane active" id="topbar_add_event" role="tabpanel">
+													<!--begin::Nav-->
+													<div class="navi navi-hover scroll my-4" data-scroll="true" data-height="300" data-mobile-height="200">
+														
+														<!--begin::Item-->
+														<div class="navi-item">
+															<a class="navi-link" href="Add_page/newStoreHouse.html">
+																<span class="navi-icon"><i class="flaticon2-analytics text-danger"></i></span>
+																<div class="navi-text">
+																	<span class="d-block font-weight-bold">Liste des dépôts</span>
+																	<span class="text-muted">Consulter la liste des dépôts</span>
+																</div>
+																<span class="label label-light-danger font-weight-bold label-inline">new</span>
+															</a>
+														</div>
+														<!--end::Item-->
+														<!--begin::Item-->
+														<div class="navi-item">
+															<a class="navi-link" href="Add_page/newDrink.html">
+																<span class="navi-icon"><i class="flaticon2-analytics text-danger"></i></span>
+																<div class="navi-text">
+																	<span class="d-block font-weight-bold">Liste des boissons</span>
+																	<span class="text-muted">Consulter la liste des boissons</span>
+																</div>
+																<span class="label label-light-danger font-weight-bold label-inline">new</span>
+															</a>
+														</div>
+														<!--end::Item-->
+														<!--begin::Item-->
+														<div class="navi-item">
+															<a class="navi-link" href="Add_page/newCategory.html">
+																<span class="navi-icon"><i class="flaticon2-analytics text-danger"></i></span>
+																<div class="navi-text">
+																	<span class="d-block font-weight-bold">Liste des catégories</span>
+																	<span class="text-muted">Consulter la liste des catégories</span>
+																</div>
+																<span class="label label-light-danger font-weight-bold label-inline">new</span>
+															</a>
+														</div>
+														<!--end::Item-->
+
+													</div>
+													<!--end::Nav-->
+												</div>
+												<!--end::Tabpane-->
+
+											</div>
+											<!--end::Content-->
+										</form>
+									</div>
+									<!--end::Dropdown-->
+									
+	
+								</div>
 							</li>
 							<!--end::Item-->
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Approvisionnement">
-								<a href="#" class="nav-link btn btn-icon btn-icon-white btn-lg" data-toggle="tab" data-target="#kt_aside_tab_3" role="tab">
+								<a href="approvisionnement.html" class="nav-link btn btn-icon btn-icon-white btn-lg" data-toggle="tab" data-target="#kt_aside_tab_3" role="tab">
 									<i class="flaticon2-calendar-6 icon-lg"></i>
 								</a>
 							</li>
@@ -618,23 +704,189 @@ License: You must have a valid license purchased only from themeforest(the above
 					<!--end::Header-->
 					<!--begin::Content-->
 					<div class="content d-flex w-100 flex-column justify-content-center align-items-center flex-column-fluid" id="kt_content">
-						<form class="form w-75 bg-white">
-							<div class="card-body">
-								<p class="h2 mb-10">Nouvelle Catégorie</p>
-								<div class="form-group row">
-									<div class="col-lg-12">
-										<label>Libellé:</label>
-										<input type="text" class="form-control" placeholder="Veuillez entrer le libellé"/>
-										<span class="form-text text-muted">Entrer le libellé de la boisson</span>
+						<div class="d-flex w-100 flex-column-fluid">
+							<!--begin::Container-->
+							<div class="container mt-15">
+								<div class="row d-flex justify-content-center">
+									<div class="col-xl-5">
+										<!--begin::Stats Widget 29-->
+										<div class="card card-custom bg-white card-stretch gutter-b">
+											<!--begin::Body-->
+											<div class="card-body d-flex flex-column">
+												<div class="d-flex justify-content-between">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="symbol symbol-50 bg-transparent flex-shrink-0">
+                                                            <img src="assets/media/stock-600x600/img-14.jpg" alt="" />
+                                                        </div>
+
+                                                        <h1 class="h3 mx-5">ETS GLORY-WIJOSPI</h1>    
+                                                    </div>
+
+                                                    <div class="dropdown dropdown-inline mr-4">
+                                                        <button type="button" class="btn btn-light-primary btn-icon btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="ki ki-bold-more-hor"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                           <button class="btn btn-white btn-hover-light w-100 font-size-lg font-weight-bold">Approvisionner</button>
+                                                           <button class="btn btn-white btn-hover-light w-100 font-size-lg font-weight-bold" data-toggle="modal" data-target="#exampleModalSizeSm">Détails</button>
+                                                        </div>
+                                                    </div>
+												</div>
+                                                <hr class="w-100 bg-primary">
+												<span class="font-weight-bold font-size-h3 mt-3 mb-3 text-primary">Description :</span>
+                                                <span class="text-muted font-size-h6">Nous sommes actuellement dans le besoin et nous vous serions reconnaissants de bien vouloir nous transmettre vos tarifs ainsi que les détails relatifs à la disponibilité et aux modalités de livraison.</span>
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::Stats Widget 29-->
 									</div>
+
+                                    <div class="col-xl-5">
+										<!--begin::Stats Widget 29-->
+										<div class="card card-custom bg-white card-stretch gutter-b">
+											<!--begin::Body-->
+											<div class="card-body d-flex flex-column">
+												<div class="d-flex justify-content-between">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="symbol symbol-50 bg-transparent flex-shrink-0">
+                                                            <img src="assets/media/stock-600x600/img-15.jpg" alt="" />
+                                                        </div>
+
+                                                        <h1 class="h3 mx-5">ETS Karl-WIJOSPI</h1>    
+                                                    </div>
+
+                                                    <div class="dropdown dropdown-inline mr-4">
+                                                        <button type="button" class="btn btn-light-primary btn-icon btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="ki ki-bold-more-hor"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                           <button class="btn btn-white btn-hover-light w-100 font-size-lg font-weight-bold">Approvisionner</button>
+                                                           <button class="btn btn-white btn-hover-light w-100 font-size-lg font-weight-bold" data-toggle="modal" data-target="#exampleModalSizeSm">Détails</button>
+                                                        </div>
+                                                    </div>
+												</div>
+                                                <hr class="w-100 bg-primary">
+												<span class="font-weight-bold font-size-h3 mt-3 mb-3 text-primary">Description :</span>
+                                                <span class="text-muted font-size-h6">Nous sommes actuellement dans le besoin et nous vous serions reconnaissants de bien vouloir nous transmettre vos tarifs ainsi que les détails relatifs à la disponibilité et aux modalités de livraison.</span>
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::Stats Widget 29-->
+									</div>
+
+
+                                    <div class="col-xl-5">
+										<!--begin::Stats Widget 29-->
+										<div class="card card-custom bg-white card-stretch gutter-b">
+											<!--begin::Body-->
+											<div class="card-body d-flex flex-column">
+												<div class="d-flex justify-content-between">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="symbol symbol-50 bg-transparent flex-shrink-0">
+                                                            <img src="assets/media/stock-600x600/img-12.jpg" alt="" />
+                                                        </div>
+
+                                                        <h1 class="h3 mx-5">ETS DrinkPalace-WIJOSPI</h1>    
+                                                    </div>
+
+                                                    <div class="dropdown dropdown-inline mr-4">
+                                                        <button type="button" class="btn btn-light-primary btn-icon btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="ki ki-bold-more-hor"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                           <button class="btn btn-white btn-hover-light w-100 font-size-lg font-weight-bold">Approvisionner</button>
+                                                           <button class="btn btn-white btn-hover-light w-100 font-size-lg font-weight-bold" data-toggle="modal" data-target="#exampleModalSizeSm">Détails</button>
+                                                        </div>
+                                                    </div>
+												</div>
+                                                <hr class="w-100 bg-primary">
+												<span class="font-weight-bold font-size-h3 mt-3 mb-3 text-primary">Description :</span>
+                                                <span class="text-muted font-size-h6">Nous sommes actuellement dans le besoin et nous vous serions reconnaissants de bien vouloir nous transmettre vos tarifs ainsi que les détails relatifs à la disponibilité et aux modalités de livraison.</span>
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::Stats Widget 29-->
+									</div>
+
+
+                                    <div class="col-xl-5">
+										<!--begin::Stats Widget 29-->
+										<div class="card card-custom bg-white card-stretch gutter-b">
+											<!--begin::Body-->
+											<div class="card-body d-flex flex-column">
+												<div class="d-flex justify-content-between">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="symbol symbol-50 bg-transparent flex-shrink-0">
+                                                            <img src="assets/media/stock-600x600/img-11.jpg" alt="" />
+                                                        </div>
+
+                                                        <h1 class="h3 mx-5">ETS Sodabitᴐ-WIJOSPI</h1>    
+                                                    </div>
+
+                                                    <div class="dropdown dropdown-inline mr-4">
+                                                        <button type="button" class="btn btn-light-primary btn-icon btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="ki ki-bold-more-hor"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                           <button class="btn btn-white btn-hover-light w-100 font-size-lg font-weight-bold">Approvisionner</button>
+                                                           <button class="btn btn-white btn-hover-light w-100 font-size-lg font-weight-bold" data-toggle="modal" data-target="#exampleModalSizeSm">Détails</button>
+                                                        </div>
+                                                    </div>
+												</div>
+                                                <hr class="w-100 bg-primary">
+												<span class="font-weight-bold font-size-h3 mt-3 mb-3 text-primary">Description :</span>
+                                                <span class="text-muted font-size-h6">Nous sommes actuellement dans le besoin et nous vous serions reconnaissants de bien vouloir nous transmettre vos tarifs ainsi que les détails relatifs à la disponibilité et aux modalités de livraison.</span>
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::Stats Widget 29-->
+									</div>
+
+
+                                    <div class="col-xl-5">
+										<!--begin::Stats Widget 29-->
+										<div class="card card-custom bg-white card-stretch gutter-b">
+											<!--begin::Body-->
+											<div class="card-body d-flex flex-column">
+												<div class="d-flex justify-content-between">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="symbol symbol-50 bg-transparent flex-shrink-0">
+                                                            <img src="assets/media/stock-600x600/img-13.jpg" alt="" />
+                                                        </div>
+
+                                                        <h1 class="h3 mx-5">ETS BOSS-WIJOSPI</h1>    
+                                                    </div>
+
+                                                    <div class="dropdown dropdown-inline mr-4">
+                                                        <button type="button" class="btn btn-light-primary btn-icon btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="ki ki-bold-more-hor"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                           <button class="btn btn-white btn-hover-light w-100 font-size-lg font-weight-bold">Approvisionner</button>
+                                                           <button class="btn btn-white btn-hover-light w-100 font-size-lg font-weight-bold" data-toggle="modal" data-target="#exampleModalSizeSm">Détails</button>
+                                                        </div>
+                                                    </div>
+												</div>
+                                                <hr class="w-100 bg-primary">
+												<span class="font-weight-bold font-size-h3 mt-3 mb-3 text-primary">Description :</span>
+                                                <span class="text-muted font-size-h6">Nous sommes actuellement dans le besoin et nous vous serions reconnaissants de bien vouloir nous transmettre vos tarifs ainsi que les détails relatifs à la disponibilité et aux modalités de livraison.</span>
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::Stats Widget 29-->
+									</div>
+
 								</div>
 							</div>
-							<div class="card-footer">
-								<button type="submit" class="btn btn-outline-success mr-5"><i class="fa fa-check-double"></i>Enregistrer</button>
-								<button type="reset" class="btn btn-danger"><i class="fas fa-times"></i>Annuler</button>
-							</div>
-						   </form>
-					</div>
+							<!--end::Container-->
+						</div>
+                        
+                        <div class="modal fade" id="exampleModalSizeSm" tabindex="-1" role="dialog" aria-labelledby="exampleModalSizeSm" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-xl bg-white" role="document">
+                                Détails de la demande d'approvisionnement et informations sur le dépôt
+                            </div>
+                        </div>
+                    </div>
 					<!--end::Content-->
 					<!--begin::Footer-->
 					<div class="footer bg-white py-4 d-flex flex-lg-column" id="kt_footer">
@@ -1948,6 +2200,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			</div>
 			<!--end::Content-->
 		</div>
+
 		<!--end::Demo Panel-->
 		<script>var HOST_URL = "https://preview.keenthemes.com/metronic/theme/html/tools/preview";</script>
 		<!--begin::Global Config(global config for global JS scripts)-->
@@ -1957,6 +2210,12 @@ License: You must have a valid license purchased only from themeforest(the above
 		<script src="assets/plugins/global/plugins.bundle.js"></script>
 		<script src="assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
 		<script src="assets/js/scripts.bundle.js"></script>
+
+        <!-- Calendrier -->
+        <script src="assets/js/calendrier.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js" integrity="sha512-Dz4zO7p6MrF+VcOD6PUbA08hK1rv0hDv/wGuxSUjImaUYxRyK2gLC6eQWVqyDN9IM1X/kUA8zkykJS/gEVOd3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        
 		<!--end::Global Theme Bundle-->
 		<!--begin::Page Vendors(used by this page)-->
 		<script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
@@ -1965,6 +2224,8 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!--begin::Page Scripts(used by this page)-->
 		<script src="assets/js/pages/widgets.js"></script>
 		<!--end::Page Scripts-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.38.0/js/tempusdominus-bootstrap-4.min.js" crossorigin="anonymous"></script>
 	</body>
 	<!--end::Body-->
 </html>

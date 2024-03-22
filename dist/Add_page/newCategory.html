@@ -43,7 +43,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!--begin::Header Mobile-->
 		<div id="kt_header_mobile" class="header-mobile header-mobile-fixed">
 			<!--begin::Logo-->
-			<a href="index.html">
+			<a href="../index.html">
 				<img alt="Logo" src="assets/media/logos/logo-letter-3.png" class="logo-default max-h-30px" />
 			</a>
 			<!--end::Logo-->
@@ -86,7 +86,7 @@ License: You must have a valid license purchased only from themeforest(the above
 					<!--begin::Brand-->
 					<div class="aside-brand d-flex flex-column align-items-center flex-column-auto py-4 py-lg-8">
 						<!--begin::Logo-->
-						<a href="index.html">
+						<a href="../index.html">
 							<img alt="Logo" src="assets/media/logos/logo-letter-9.png" class="max-h-30px" />
 						</a>
 						<!--end::Logo-->
@@ -98,7 +98,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						<ul class="nav flex-column">
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Accueil">
-								<a href="#" class="nav-link btn btn-icon btn-clean btn-icon-white btn-lg active">
+								<a href="../index.html" class="nav-link btn btn-icon btn-clean btn-icon-white btn-lg active">
 									<i class="flaticon2-protection icon-lg"></i>
 								</a>
 							</li>
@@ -198,14 +198,100 @@ License: You must have a valid license purchased only from themeforest(the above
 							<!--end::Item-->							
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Listes">
-								<a href="#" class="nav-link btn btn-icon btn-icon-white btn-lg" data-toggle="tab" data-target="#kt_aside_tab_2" role="tab">
-									<i class="flaticon2-list-3 icon-lg"></i>
-								</a>
+								<div class="dropdown">
+
+									<div class="topbar-item mr-3" data-toggle="dropdown" data-offset="10px,0px">
+										<div class="nav-link btn btn-icon btn-dropdown btn-icon-white btn-lg" data-toggle="tab" data-target="#kt_aside_tab_3" role="tab">
+											<i class="flaticon2-list-3 icon-lg"></i>
+										</div>	
+									</div>
+									
+									
+
+									<!--begin::Dropdown-->
+									<div class="dropdown-menu p-0 m-0 dropdown-menu-right dropdown-menu-anim-up dropdown-menu-lg">
+										<form>
+											<!--begin::Header-->
+											<div class="d-flex flex-column pt-12 bgi-size-cover bgi-no-repeat rounded-top" style="background-image: url(assets/media/misc/test.jpg)">
+												<!--begin::Title-->
+												<h4 class="d-flex flex-center rounded-top">
+													<span class="text-white">LISTES</span>
+													<!-- <span class="btn btn-text btn-danger btn-sm font-weight-bold btn-font-md ml-2">3</span> -->
+												</h4>
+												<!--end::Title-->
+												<!--begin::Tabs-->
+												<ul class="nav nav-bold nav-tabs nav-tabs-line nav-tabs-line-3x nav-tabs-line-transparent-white nav-tabs-line-active-border-primary mt-3 px-8" role="tablist">
+													<li class="nav-item">
+														<a class="nav-link active show" data-toggle="tab" href="#topbar_add_events">Parties</a>
+													</li>
+
+												</ul>
+												<!--end::Tabs-->
+											</div>
+											<!--end::Header-->
+											<!--begin::Content-->
+											<div class="tab-content">
+
+												<!--begin::Tabpane-->
+												<div class="tab-pane active" id="topbar_add_event" role="tabpanel">
+													<!--begin::Nav-->
+													<div class="navi navi-hover scroll my-4" data-scroll="true" data-height="300" data-mobile-height="200">
+														
+														<!--begin::Item-->
+														<div class="navi-item">
+															<a class="navi-link" href="newStoreHouse.html">
+																<span class="navi-icon"><i class="flaticon2-analytics text-danger"></i></span>
+																<div class="navi-text">
+																	<span class="d-block font-weight-bold">Liste des dépôts</span>
+																	<span class="text-muted">Consulter la liste des dépôts</span>
+																</div>
+																<span class="label label-light-danger font-weight-bold label-inline">new</span>
+															</a>
+														</div>
+														<!--end::Item-->
+														<!--begin::Item-->
+														<div class="navi-item">
+															<a class="navi-link" href="newDrink.html">
+																<span class="navi-icon"><i class="flaticon2-analytics text-danger"></i></span>
+																<div class="navi-text">
+																	<span class="d-block font-weight-bold">Liste des boissons</span>
+																	<span class="text-muted">Consulter la liste des boissons</span>
+																</div>
+																<span class="label label-light-danger font-weight-bold label-inline">new</span>
+															</a>
+														</div>
+														<!--end::Item-->
+														<!--begin::Item-->
+														<div class="navi-item">
+															<a class="navi-link" href="newCategory.html">
+																<span class="navi-icon"><i class="flaticon2-analytics text-danger"></i></span>
+																<div class="navi-text">
+																	<span class="d-block font-weight-bold">Liste des catégories</span>
+																	<span class="text-muted">Consulter la liste des catégories</span>
+																</div>
+																<span class="label label-light-danger font-weight-bold label-inline">new</span>
+															</a>
+														</div>
+														<!--end::Item-->
+
+													</div>
+													<!--end::Nav-->
+												</div>
+												<!--end::Tabpane-->
+
+											</div>
+											<!--end::Content-->
+										</form>
+									</div>
+									<!--end::Dropdown-->
+									
+	
+								</div>
 							</li>
 							<!--end::Item-->
 							<!--begin::Item-->
 							<li class="nav-item mb-5" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Approvisionnement">
-								<a href="#" class="nav-link btn btn-icon btn-icon-white btn-lg" data-toggle="tab" data-target="#kt_aside_tab_3" role="tab">
+								<a href="approvisionnement.html" class="nav-link btn btn-icon btn-icon-white btn-lg" data-toggle="tab" data-target="#kt_aside_tab_3" role="tab">
 									<i class="flaticon2-calendar-6 icon-lg"></i>
 								</a>
 							</li>
@@ -617,70 +703,20 @@ License: You must have a valid license purchased only from themeforest(the above
 					</div>
 					<!--end::Header-->
 					<!--begin::Content-->
-					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
-						<form class="form font-size-h1 font-size-lg-h2">
+					<div class="content d-flex w-100 flex-column justify-content-center align-items-center flex-column-fluid" id="kt_content">
+						<form class="form w-40 bg-white">
 							<div class="card-body">
+								<p class="h2 mb-10">Nouvelle Catégorie</p>
 								<div class="form-group row">
-									<div class="col-lg-6">
+									<div class="col-lg-12">
 										<label>Libellé:</label>
 										<input type="text" class="form-control" placeholder="Veuillez entrer le libellé"/>
-										<span class="form-text text-muted">Entrer le nom de la boisson</span>
 									</div>
-									<div class="col-lg-6">
-										<label>Capacité:</label>
-										<div class="input-group">
-											<input type="tel" class="form-control" placeholder="Veuillez entrer sa capacité (En cl)"/>
-											<div class="input-group-append"><span class="input-group-text"><i class="fas fa-glass-whiskey"></i></span></div>
-										</div>
-									<span class="form-text text-muted">Entrer la capacité de la boisson</span>
 								</div>
-							</div>
-							<div class="form-group row">
-								<div class="col-lg-6">
-									<label>Prix:</label>
-									<div class="input-group">
-										<input type="email" class="form-control" placeholder="Veuillez entrer le prix"/>
-										<div class="input-group-append"><span class="input-group-text"><i class="fa fa-coins"></i></span></div>
-									</div>
-									<span class="form-text text-muted">Entrer le prix du casier</span>
-								</div>
-								<div class="col-lg-6">
-									<label>Durée de vie:</label>
-									<div class="input-group">
-										<input type="text" class="form-control" placeholder="Veuillez entrer la durée de vie (En mois)"/>
-										<div class="input-group-append"><span class="input-group-text"><i class="fa fa-calendar"></i></span></div>
-									</div>
-									<span class="form-text text-muted">Entrer la durée de vie de la boisson</span>
-								</div>
-							</div>
-							<div class="form-group row">
-								<div class="col-lg-6">
-									<label>Catégorie:</label>
-									<select class="form-control selectpicker" data-size="7" data-live-search="true">
-										<option value="" disabled>Sélectionner</option>
-										<option value="Alcoolisée">Alcoolisée</option>
-										<option value="Sucrerie" selected>Sucrerie</option>
-									</select>
-									<span class="form-text text-muted">Entrer la catégorie de la boisson</span>
-								</div>
-								<div class="col-lg-6">
-									<label>Conditionnement:</label>
-									<select class="form-control selectpicker" data-size="7" data-live-search="true">
-										<option value="" disabled>Sélectionner</option>
-										<option value="Alcoolisée">Verre</option>
-										<option value="Sucrerie" selected>Cannette</option>
-									</select>
-									<span class="form-text text-muted">Entrer le conditionnement de la boisson</span>
-								</div>
-							</div>
 							</div>
 							<div class="card-footer">
-								<div class="row">
-									<div class="col-lg-6">
-										<button type="submit" class="btn btn-outline-success mr-5"><i class="fa fa-check-double"></i>Enregistrer</button>
-										<button type="reset" class="btn btn-danger"><i class="fas fa-times"></i>Annuler</button>
-									</div>
-								</div>
+								<button type="submit" class="btn btn-outline-success mr-5"><i class="fa fa-check-double"></i>Enregistrer</button>
+								<button type="reset" class="btn btn-danger"><i class="fas fa-times"></i>Annuler</button>
 							</div>
 						</form>
 					</div>
