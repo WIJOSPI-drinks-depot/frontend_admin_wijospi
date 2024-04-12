@@ -1,16 +1,25 @@
-const form = document.getElementById('formId');
+const form = document.getElementById('categoryForm');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     // Récupérer les données du formulaire
-    const categoryName = document.querySelector('[name="name"]').value;
+    const categoryName = document.querySelector('[name="nameCategory"]').value;
+
+    // Gestion de validations
+    toastrSchema()
+    if (categoryName == "") {
+        toastr.info("Veuillez renseigner le nom de la catégorie !");
+        return;
+    }
+    // Fin Gestion des validations
     
+    // Formatage des données sous JSON
     const formData = {
         name: categoryName
     };
 
-    fetch('http://127.0.0.1:8000/category', {
+    fetch('http://127.0.0.1:8000/api/category/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -20,33 +29,17 @@ form.addEventListener('submit', (e) => {
     })
     .then(response => {
         if (!response.ok){
-            throw new Error('Une erreur est survenue lors de la réponse du serveur !');
+            console.error('Une erreur est survenue lors de la réponse du serveur !');
         }
 
         return response.json();
     })
     .then(data => {
-            const message = data.message;
-            const type = data.type;
+            let message = data.message;
+            let type = data.type;
             
             // Définition du format des toasts
-            toastr.options = {
-                "closeButton": false,
-                "debug": false,
-                "newestOnTop": false,
-                "progressBar": false,
-                "positionClass": "toast-top-right",
-                "preventDuplicates": false,
-                "onclick": null,
-                "showDuration": "300",
-                "hideDuration": "1000",
-                "timeOut": "5000",
-                "extendedTimeOut": "1000",
-                "showEasing": "swing",
-                "hideEasing": "linear",
-                "showMethod": "fadeIn",
-                "hideMethod": "fadeOut"
-            };
+            toastrSchema()
 
             if (type === 'success') {  
                 toastr.success(message);
@@ -75,4 +68,24 @@ function getCookie(name) {
         }
     }
     return cookieValue;
+}
+
+function toastrSchema() {
+    toastr.options = {
+        "closeButton": false,
+        "debug": false,
+        "newestOnTop": false,
+        "progressBar": false,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    };
 }
