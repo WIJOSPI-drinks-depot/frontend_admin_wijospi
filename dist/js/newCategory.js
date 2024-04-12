@@ -7,7 +7,7 @@ form.addEventListener('submit', (e) => {
     const categoryName = document.querySelector('[name="nameCategory"]').value;
 
     // Gestion de validations
-    toastrSchema()
+    toastrSchema();
     if (categoryName == "") {
         toastr.info("Veuillez renseigner le nom de la catégorie !");
         return;
@@ -39,7 +39,7 @@ form.addEventListener('submit', (e) => {
             let type = data.type;
             
             // Définition du format des toasts
-            toastrSchema()
+            toastrSchema();
 
             if (type === 'success') {  
                 toastr.success(message);
