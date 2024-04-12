@@ -1,25 +1,66 @@
-const form = document.getElementById('categoryForm');
+const form = document.getElementById('storehouseForm');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     // Récupérer les données du formulaire
-    const categoryName = document.querySelector('[name="nameCategory"]').value;
+    const storehouseDesignation = document.querySelector('[name="designationStore"]').value;
+    const storehouseContact = document.querySelector('[name="contactStore"]').value;
+    const storehouseEmail = document.querySelector('[name="emailStore"]').value;
+    const storehousePassword = document.querySelector('[name="passwordStore"]').value;
+    const storehouseAddress = document.querySelector('[name="adresseStore"]').value;
+    const secondaryStorehouseradio = document.getElementById('secondaryStorehouse');
+    const generalStorehouseradio = document.getElementById('generalStorehouse');
+    let storehouseType = null;
+
+    if (secondaryStorehouseradio.checked) {
+        storehouseType = secondaryStorehouseradio.value;
+    } else if (generalStorehouseradio.checked) {
+        storehouseType = generalStorehouseradio.value;
+    }
 
     // Gestion de validations
     toastrSchema();
-    if (categoryName == "") {
-        toastr.info("Veuillez renseigner le nom de la catégorie !");
+    if (storehouseDesignation == "") {
+        toastr.info("Veuillez renseigner le nom du dépôt !");
+        return;
+    }
+
+    if (storehouseContact == "") {
+        toastr.info("Veuillez renseigner le numéro de téléphone du dépôt !");
+        return;
+    } else if (isNaN(parseInt(storehouseContact)) || storehouseContact.length < 8 || storehouseContact.length > 8) {
+        toastr.info("Le numéro de téléphone doit être numérique et de 8 caractères !");
+        return;
+    }
+
+    if (storehouseEmail == "") {
+        toastr.info("Veuillez renseigner l'email du dépôt !");
+        return;
+    }
+
+    if (storehousePassword == "") {
+        toastr.info("Veuillez renseigner le mot de passe du dépôt !");
+        return;
+    }
+
+    if (storehouseAddress == "") {
+        toastr.info("Veuillez renseigner l'adresse du dépôt !");
         return;
     }
     // Fin Gestion des validations
     
     // Formatage des données sous JSON
     const formData = {
-        name: categoryName
+        name: storehouseDesignation,
+        contact: storehouseContact,
+        type: storehouseType,
+        address: storehouseAddress,
+        email: storehouseEmail,
+        password: storehousePassword,
     };
 
-    fetch('http://127.0.0.1:8000/api/category/', {
+    fetch('http://127.0.0.1:8000/api/storehouse/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
