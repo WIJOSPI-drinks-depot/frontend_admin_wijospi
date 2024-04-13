@@ -1,25 +1,25 @@
-const form = document.getElementById('categoryForm');
+const form = document.getElementById('packagingForm');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     // Récupérer les données du formulaire
-    const categoryName = document.querySelector('[name="nameCategory"]').value;
+    const packagingName = document.querySelector('[name="namePackaging"]').value;
 
     // Gestion de validations
     toastrSchema();
-    if (categoryName == "") {
-        toastr.info("Veuillez renseigner le nom de la catégorie !");
+    if (packagingName == "") {
+        toastr.info("Veuillez renseigner le nom du conditionnement !");
         return;
     }
     // Fin Gestion des validations
     
     // Formatage des données sous JSON
     const formData = {
-        name: categoryName
+        name: packagingName
     };
 
-    fetch('http://127.0.0.1:8000/api/category/', {
+    fetch('http://127.0.0.1:8000/api/packaging/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
