@@ -98,8 +98,8 @@ form.addEventListener('submit', (e) => {
     const formData = {
         date_time: supplyDateTime,
         storehouse: supplyStorehouse,
-        drink: supplyDrink,
-        quantity: supplyQuantityRack
+        drink_rack: supplyDrink,
+        quantity: parseInt(supplyQuantityRack)
     };
 
     fetch('http://127.0.0.1:8000/api/supply/', {
